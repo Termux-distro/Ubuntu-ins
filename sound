@@ -1,0 +1,10 @@
+#/bin/bash
+pkg install pulseaudio -y
+
+rm -rf $PREFIX/bin/pulse/daemon.conf && rm -rf $PREFIX/etc/pulse/default.pa
+
+cd Ubuntu-ins
+
+cp daemon.conf $PREFIX/etc/pulse && cp default.pa $PREFIX/etc/pulse
+
+cd
