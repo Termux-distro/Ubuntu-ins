@@ -1,3 +1,5 @@
+#! /bin/bash
+
 echo "
 #! /usr/bin/perl
 # vim: set sw=2 sts=2 ts=8 syn=perl expandtab:
