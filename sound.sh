@@ -1,7 +1,1 @@
-#!/bin/bash
-
-cp vnc /bin
-
-rm -rf /bin/vncserver
-
-chmod +x /bin/vnc
+echo "export PULSE_SERVER=127.0.0.1" /bin/vncserver
