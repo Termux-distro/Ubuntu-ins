@@ -1,8 +1,12 @@
-#/bin/bash
-pkg install pulseaudio -y
 
-rm -rf $PREFIX/bin/pulse/daemon.conf && rm -rf $PREFIX/etc/pulse/default.pa
+pkg install pulseaudio
 
-cp daemon.conf $PREFIX/etc/pulse && cp default.pa $PREFIX/etc/pulse
+rm $PREFIX/etc/pulse/default.pa 
 
-cd
+mv default.pa $PREFIX/etc/pulse
+
+echo "-------------------------------"
+
+rm nano $PREFIX/etc/pulse/daemon.conf
+
+mv daemon.conf $PREFIX/etc/pulse
